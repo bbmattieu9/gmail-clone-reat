@@ -1,9 +1,9 @@
 import React from 'react';
 import './Sidebar.css';
-import { Button, IconButton } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import InboxIcon from '@material-ui/icons/Inbox';
 import StarIcon from '@material-ui/icons/Star';
-import AddIcon from '@material-ui/icons/Add';
+// import AddIcon from '@material-ui/icons/Add';
 import SidebarOption from './SidebarOption';
 import LabelImportantIcon  from '@material-ui/icons/LabelImportant';
 import NearMeIcon  from '@material-ui/icons/NearMe';
@@ -18,11 +18,9 @@ import PersonIcon from '@material-ui/icons/Person';
 function Sidebar() {
     return (
     <div className='sidebar'> 
-            <Button 
-                    className='sidebar__compose' 
-                    startIcon={<AddIcon fontSize='large'/>}>
+            <div className='sidebar__compose'>
                 Compose
-            </Button>
+            </div>
 
             <SidebarOption Icon={InboxIcon} 
                             title='Inbox'
