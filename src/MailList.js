@@ -16,6 +16,7 @@ import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 
 // import components
 import Section from './Section';
+import EmailRow from './EmailRow';
 
 function MailList() {
     return (
@@ -73,7 +74,53 @@ function MailList() {
             </div>
 
             <div className="emailList__list">
-                
+                <EmailRow 
+                    title='Twich'
+                    subject='Treat as urgent!!!'
+                    description='This is a test message'
+                    time='10:00pm'
+                    />
+
+                <EmailRow 
+                    title='Tizi Cerutti'
+                    subject='Status Update Please!!'
+                    description='This is a test message 
+                    This is a test message
+                    This is a test message
+                    This is a test message'
+                    time='11:00pm'
+                    />
+
+<EmailRow 
+                    title=' Babatoonday Mattieu'
+                    subject='Unit test like a Pro!'
+                    description='This is a test message 
+                    This is a test message
+                    This is a test message
+                    This is a test message'
+                    time='11:00pm'
+                    />
+
+
+<EmailRow 
+                    title='Tizi Cerutti'
+                    subject='Senior Java Developer at Rise Technical Recruitment and 9 more jobs in Germany for you. Apply Now.'
+                    description='This is a test message 
+                    This is a test message
+                    This is a test message
+                    This is a test message'
+                    time='11:00pm'
+                    />
+
+<EmailRow 
+                    title='Ben Lesh'
+                    subject='RXJS operators for high performance app!!'
+                    description='This is a test message 
+                    This is a test message
+                    This is a test message
+                    This is a test message'
+                    time='11:00pm'
+                    />
             </div>
         </div>
     )
