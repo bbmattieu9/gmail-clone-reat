@@ -1,6 +1,6 @@
 import React from 'react';
 import './Sidebar.css';
-import { Button } from '@material-ui/core';
+import { Button, IconButton } from '@material-ui/core';
 import InboxIcon from '@material-ui/icons/Inbox';
 import StarIcon from '@material-ui/icons/Star';
 import AddIcon from '@material-ui/icons/Add';
@@ -11,8 +11,13 @@ import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import NoteIcon  from '@material-ui/icons/Note';
 import ExpandMoreIcon  from '@material-ui/icons/ExpandMore';
 
+import PhoneIcon from '@material-ui/icons/Phone';
+import DuoIcon from '@material-ui/icons/Duo';
+import PersonIcon from '@material-ui/icons/Person';
+
 function Sidebar() {
-    return <div className='sidebar'> 
+    return (
+    <div className='sidebar'> 
             <Button 
                     className='sidebar__compose' 
                     startIcon={<AddIcon fontSize='large'/>}>
@@ -46,10 +51,27 @@ function Sidebar() {
 
             <SidebarOption Icon={ExpandMoreIcon} 
                             title='More'
-                            number={10} />       
+                            number={10} />     
+
+
+               <div className="sidebar__footer">
+                    <div className="sidebar__footerIcons">
+                        <IconButton>
+                            <PersonIcon />
+                        </IconButton>
+
+                        <IconButton>
+                            <DuoIcon />
+                        </IconButton>
+
+                        <IconButton>
+                            <PhoneIcon />
+                        </IconButton>
+                    </div>
+               </div> 
 
         </div>
-    
+    );
 }
 
 export default Sidebar

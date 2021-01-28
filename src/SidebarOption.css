@@ -39,3 +39,7 @@
 .sidebarOption--active > p {
     display: inline !important;
 }
+
+.sidebarOption:hover > p {
+    display: inline;
+}
