@@ -12,6 +12,27 @@
  .mail__toolsLeft {
     display: flex;
  }
- .mail__body {
+
+ .mail__bodyHeader {
+     display: flex;
+     align-items: center;
+     border-bottom: 1px solid whitesmoke;
+     padding: 20px;
+    position: relative;
+    }
+
+ .mail__bodyHeader > p {
+     margin-left: 20px
      
+ }
+
+ .mail__message > h2 {
+    font-weight: 400;
+    margin-right: 20px;
+ }
+
+ .mail__message > p {
+     padding: 10px;
+     margin-right: 20px;
+     overflow: break-word;
  }
